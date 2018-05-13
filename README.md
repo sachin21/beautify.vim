@@ -15,7 +15,7 @@
 This plug-in support js, json, css and html as reformatter. In the case of the buffer already set filetype, reformatter is selected automatically. Therefore if you want a result then, you have only to execute `:Beautify`.
 
 - `html-beautify`
-- `css-beautify`
+- `cssbeautify`
 - `js-beautify`
 - `jq`
 
@@ -77,7 +77,7 @@ If you want to configure js-beautify settings, you can check out [here](https://
 ```
 " let g:beautify#beautifier#npm_beautifier#bin = {
 "        \ 'javascript' : 'js-beautify',
-"        \ 'css'        : 'css-beautify',
+"        \ 'css'        : 'cssbeautify',
 "        \ 'html'       : 'html-beautify' }
 " let g:beautify#beautifier#jq#bin = 'jq'
 " let g:beautify#beautifier#html2haml#bin = 'html2haml'

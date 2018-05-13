@@ -2,7 +2,7 @@ let g:beautify#beautifier#npm_beautifier#bin =
       \ get(g:, 'beautify#beautifier#npm_beautifier#bin',
       \ {
       \   'javascript' : 'js-beautify',
-      \   'css'        : 'css-beautify',
+      \   'css'        : 'cssbeautify',
       \   'html'       : 'html-beautify'
       \ })
 
@@ -19,7 +19,7 @@ function! beautify#beautifier#npm_beautifier#define() "{{{
     let s:css_source = copy(s:default_source)
     let s:css_source.bin = g:beautify#beautifier#npm_beautifier#bin['css']
     let s:css_source.filetype = 'css'
-    let s:css_source.name = 'css-beautify'
+    let s:css_source.name = 'cssbeautify'
 
     let s:html_source = copy(s:default_source)
     let s:html_source.bin = g:beautify#beautifier#npm_beautifier#bin['html']
